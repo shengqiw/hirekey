@@ -9,8 +9,8 @@ import Typography from '@mui/material/Typography';
 
 export const CardItem = ({job}) => {
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">
+    <Box sx={{ minWidth: 275 }} >
+      <Card variant="outlined" style={{borderRadius: "10px"}}>
       <CardContent>
       <Typography variant="h5" component="div">
         {job.jobTitle || "Job Title"}

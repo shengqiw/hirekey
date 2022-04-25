@@ -3,8 +3,11 @@
 }
 .centerDiv {
     align-items: 'center';
-    justify-content: 'center'
+    justify-content: 'center';
 }
 .borderTest {
     border: 2px solid blue;
+}
+.centerFilter {
+    left: 4%
 }

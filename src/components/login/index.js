@@ -32,7 +32,7 @@ function Copyright(props) {
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#fbe498'
+      main: '#2196F3'
     }
   }
 });
@@ -49,10 +49,12 @@ export function Login() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" style={{backgroundColor: 'white'}}>
         <CssBaseline />
         <Box
           sx={{
+            pt: 6,
+            pb: 2,
             marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
@@ -100,7 +102,7 @@ export function Login() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="#" variant="body1">
                   Forgot password?
                 </Link>
               </Grid>
@@ -112,7 +114,7 @@ export function Login() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ mt: 8, mb: 10, pb: 4}} />
       </Container>
     </ThemeProvider>
   );

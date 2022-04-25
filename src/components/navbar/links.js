@@ -13,4 +13,17 @@ export const pageLinks = [
     }
 ];
 
-export const userLinks = ['Profile', 'Account', 'Dashboard', 'Logout'];
+export const userLinks = [
+    {
+        title: 'Profile',
+        redirect: '/profile'
+    }, 
+    {
+        title: 'Settings',
+        redirect: '/settings'
+    }, 
+    {
+        title: 'Logout',
+        redirect: '/logout'
+    }
+];

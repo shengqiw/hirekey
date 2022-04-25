@@ -7,11 +7,14 @@ import { InvalidRoute } from './error/invalidRoute';
 import { Navbar } from './navbar';
 import { Listing } from './jobs-listing';
 import { Contractor } from './contractor';
+import { Footer } from './footer';
 
 export const App = () => {
   return (
     <div style={{
       backgroundColor: '#EAE9E6',
+      width: "100%",
+      height: "100%"
     }}>
       <Router>
         <Navbar />
@@ -21,9 +24,10 @@ export const App = () => {
           <Route path="/listing" element={<Listing />} />
           <Route path="/contractor" element={<Contractor />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/logout" element={<Login />}/>
           <Route path="*" element={<InvalidRoute />} />
         </Routes>
-
+        <Footer />
       </Router>
 
     </div>

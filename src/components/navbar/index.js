@@ -15,8 +15,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import { pageLinks, userLinks } from './links';
 
-
-
 const theme = createTheme({
     palette: {
       primary: {
@@ -84,8 +82,8 @@ export const Navbar = () => {
                 onClose={handleCloseUserMenu}
                 >
                 {userLinks.map((userLink) => (
-                    <MenuItem key={userLink} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{userLink}</Typography>
+                    <MenuItem key={userLink.title} onClick={() => navigate(userLink.redirect)}>
+                    <Typography textAlign="center">{userLink.title}</Typography>
                     </MenuItem>
                 ))}
                 </Menu>

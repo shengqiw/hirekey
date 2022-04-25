@@ -1,12 +1,12 @@
 import React from 'react';
 import { Stack } from '@mui/material';
-import styles from '../../styles/listing/listing.module.css';
+import styles from '../../styles/global.module.css';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
 export const JobsFilter = () => {
     return (
-        <Stack spacing={2} className={styles.centerDiv} style={{ margin: "30px 40px" }}>
+        <Stack position="fixed" spacing={2} className={styles.centerFilter}>
             <h2>HireKey Listing</h2>
             <TextField id="outlined-basic" label="Search Listing" variant="outlined" />
             <br />
